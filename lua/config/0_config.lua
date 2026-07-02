@@ -10,6 +10,9 @@ end)
 -- Sometimes I'm lazy and just use the mouse..
 vim.o.mouse = "a"
 
+-- Disable relative numbers in favor of #G navigation
+vim.o.relativenumber = false
+
 vim.o.breakindent = true
 vim.o.undofile = true
 
