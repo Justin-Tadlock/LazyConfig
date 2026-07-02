@@ -3,6 +3,9 @@ if vim.loader then
 end
 
 -- I don't like having a split clipboard buffer from system and different nvim buffers
+-- Note: if the clipboard is not merging with the system, install one of the following:
+-- Wayland Displays: wl-clipboard
+-- X11 displays: xclip or xsel
 vim.schedule(function()
   vim.o.clipboard = "unnamedplus"
 end)
